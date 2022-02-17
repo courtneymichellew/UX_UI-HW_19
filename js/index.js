@@ -1,17 +1,22 @@
-// Create the addNumbers function here.
-function addNumbers() {
-    var two = 2;
-    var three = 3;
-    var five = two + three;
-    console.log(five);
-    
+console.log("Your js file is loaded!");
+
+$(document).ready(function(){
+    /*! Fades in page on load */
+    $('#aboutMe').css('display', 'none');
+    $('#aboutMe').fadeIn(6000);
+});
+
+var sourceSwap = function () {
+    var $this = $(this);
+    var newSource = $this.data('alt-src');
+    $this.data('alt-src', $this.attr('src'));
+    $this.attr('src', newSource);
 }
-addNumbers();
-// Create the stringConcat function here.
-function stringConcat() {
-    var taco = 'taco';
-    var cat = 'cat'; 
-    var tacoCat = 'taco' + ' ' + 'cat'; 
-}
-alert(tacoCat)
-stringConcat();
+
+$(function () {
+    $('img#logo').hover(sourceSwap, sourceSwap);
+});
+
+
+
+console.log("Your function did it!");

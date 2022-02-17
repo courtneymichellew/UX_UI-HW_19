@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- CSS Style Sheet -->
   <link href="css/index.css" type="text/css" rel="stylesheet">
+  
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&family=Prata&display=swap" rel="stylesheet">
+
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/index.js"></script>
+
 </head>
 <title>Portfolio | Courtney Michelle Williams
 </title>
 <body>
+  <section class="container">
   <header class="navigation">
-    <div class="logo" class="inline-block">
-      <img src="Images/Logo-Courtney-Michelle.png">
+    <div id="homeButton" class="inline-block">
+      <img data-alt-src="Images/noun-house-white.png" src="Images/LogoCourtney-Michelle_white.png" id="logo">
     </div>
     <nav class="navText" class="inline-block">
       <ul>
@@ -21,23 +31,28 @@
       </ul>
     </nav>
   </header>
-  <section class="container">
-    <section class="container2">
-    <div id="aboutMe">
+  
+    <div id="aboutMe" class="hidden">
       <div class="introGraph" class="inline-block">
         
+        <div class="headShot" class="inline-block">
+          <img src="Images/Courtney Williams_Headshot-circle.png" id="centerHeadShot">
+        </div> 
+
         <div id="introText">
           <h1 class="pageTopic">Hi, I'm Courtney Michelle</h1>
         <p class="pageTopic">A UX/UI Designer from Atlanta with a 10 year background in creating intuitive solutions for customers and users in the service industry. When designing, I aim to understand the major underlying problem and then create a tree of branched solutions that can be seamlessly applied to the customer journey ribbon. I am skilled in using design tools like, Figma, Miro, GitHub and Adobe Creative Suite.
         </p>
         </div>
       </div>
-      <div class="headShot" class="inline-block">
-        <img src="Images/Courtney Williams_Headshot.jpeg" id="centerHeadShot">
-      </div> 
+      
     </div>
+  </section>  
+
 
     <!--  My UX Skills section coded using CSS flex -->
+    <section class="container2">
+      <section id="container3">
     <h1 class="sectionTopic">My Skills
     </h1>
 
@@ -77,7 +92,7 @@
         </p>
         </div>
         <div id="work1Logo" class="gridArea">
-          <img src="Images/Camp_Horizon_logo.png" class="imgLogo">
+          <img src="Images/Camp_Horizon_logo2.png" class="imgLogo">
         </div>
     
         <div id="myWork2text" class="gridArea">
@@ -87,7 +102,7 @@
         </p>
         </div>
         <div id="work2Logo" class="gridArea">
-          <img src="Images/BSure-Logo.png" class="imgLogo">
+          <img src="Images/BSure-Logo2.png" class="imgLogo">
         </div>
     
         <div id="myWork3text" class="gridArea">
@@ -97,7 +112,7 @@
         </p>
         </div>
         <div id="work3Logo" class="gridArea">
-          <img src="Images/JoyRide_logo.png" class="imgLogo">
+          <img src="Images/JoyRide_logo2.png" class="imgLogo">
         </div>
     </div>
 
@@ -105,7 +120,7 @@
       <div class="connectWithMe">
         <h1 id="connectText">Connect With Me!
         </h1>
-        <a href="https://www.linkedin.com/in/courtneywcreative/" target="_blank"><img src="Images/LinkedIN_black.png" id="imgLi"></a>
+        <a href="https://www.linkedin.com/in/courtneywcreative/" target="_blank"><img src="Images/LinkedIN_white.png" id="imgLi"></a>
       </div>
     </div>
     <footer id="contact">
@@ -119,8 +134,11 @@
       </nav>
       <p>Copyright 2022</p>
     </footer>
+    </section>
     </section>  
-  </section>
   
 </body>
+
+
+
 </html>
