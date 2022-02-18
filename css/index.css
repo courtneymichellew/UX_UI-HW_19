@@ -275,21 +275,19 @@ body {
 
 .connectWithMe {
   /*outline: solid red 1px;*/
-  display: flex;
   width: 100%;
   padding-bottom: 40px;
   margin: auto;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
 }
 
 #connectText {
-  
+  text-align: center;
 }
 
 #imgLi {
-  
+  position: relative;
+  top: 30%;
+  left: 47%;
 }
 footer {
   /*outline: solid red 1px;*/
