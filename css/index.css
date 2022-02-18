@@ -275,19 +275,21 @@ body {
 
 .connectWithMe {
   /*outline: solid red 1px;*/
+  display: flex;
   width: 100%;
   padding-bottom: 40px;
   margin: auto;
-}
-
-#connectText {
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
+#connectText {
+  
+}
+
 #imgLi {
-  position: relative;
-  top: 20%;
-  left: 45%;
+  
 }
 footer {
   /*outline: solid red 1px;*/
@@ -297,7 +299,7 @@ footer {
   /*color: white;*/
   color: white;
   font-family: 'Open Sans', sans-serif;
-  
+  padding-bottom: 10px;
 }
 .footerText {
   /*outline: solid red 1px;*/
